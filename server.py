@@ -1,7 +1,7 @@
 import os
 import uvicorn
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
-app = FastAPI
+app = FastAPI()
 clients = set()
 @app.get("/")
 def home():
