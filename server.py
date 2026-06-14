@@ -6,7 +6,6 @@ clients = set()
 @app.get("/")
 def home():
     return {"status": "ChatAE شغال ✅"}
-
 @app.websocket("/ws/{username}")
 async def websocket_endpoint(websocket: WebSocket, username: str):
     await websocket.accept()
